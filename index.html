@@ -11,14 +11,40 @@
 		margin-top: 30px;
 	}
 	.user-well{
-		background-color: #999999;
+		background-color: #9b59b6;
 		padding: 15px;
-		color: #fff;
+		color: #000;
+	}
+	.chat-well{
+		background-color: #3498db;
+		padding: 10px;
+		margin-bottom: 10px;
+		color: #000;
+	}
+	#chat{
+		background-color: #217dbb;
+		padding: 30px;
+	}
+	#msgArea{
+		display: none;
 	}
 </style>
 <body>
+
+	<div id="userFormArea">
+		<div class="col-md-12">
+			<form id="userMessageForm">
+				<div class="form-group">
+					<label>Enter your Username:</label>
+					<input class="form-control" id="user" />
+				</div>
+				<input type="submit" class="btn btn-success" value="Login">
+			</form>
+		</div>
+	</div>
+
 	<div class="container">
-		<div class="row">
+		<div id="msgArea" class="row">
 			<div class="col-md-4">
 				<div class="user-well">
 					<h1>Users</h1>
@@ -38,7 +64,8 @@
 		</div>
 	</div>
 	<script>
-		
+		$(function(){
+		});
 	</script>
 </body>
 </html>
