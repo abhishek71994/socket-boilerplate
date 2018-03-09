@@ -48,7 +48,7 @@
 			<div class="col-md-4">
 				<div class="user-well">
 					<h1>Users</h1>
-					<ul id="users" class="list-group"></ul>
+					<ul id="users-ktg" class="list-group"></ul>
 				</div>
 			</div>
 			<div class="col-md-8">
@@ -65,6 +65,17 @@
 	</div>
 	<script>
 		$(function(){
+			var socket = io.connect();
+			var $msgform = $('#messageForm');
+			var $userMsgForm = $('#userMessageForm');
+			var $userFormArea = $('#userFormArea');
+			var $user = $('#user');
+			var $userKtg = $('#users-ktg');
+ 			var $msg = $('#message');
+			var $chat = $('#chat');
+			var $msgArea = $('#msgArea');
+
+			
 		});
 	</script>
 </body>
